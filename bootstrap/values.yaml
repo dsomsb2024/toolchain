@@ -1,0 +1,16 @@
+argocd:
+  project: argocd
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dso-platform
+  source:
+    repoURL: https://github.com/dsomsb2024/toolchain.git
+    targetRevision: main
+infra:
+  project: infra
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dso-platform
+  source:
+    repoURL: https://github.com/dsomsb2024/toolchain.git
+    targetRevision: main
